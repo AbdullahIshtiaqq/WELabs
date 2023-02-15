@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Update Product</title>
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+
+    <link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.12.1/css/jquery.dataTables.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.css">
+  	<script src="http://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+	<script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.js"></script>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+    <style>
+#show {
+  font-family: Arial, Helvetica, sans-serif;
+    font-size: large;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#show td, #show th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#show tr:nth-child(even){background-color: #f2f2f2;}
+
+#show tr:hover {background-color: #ddd;}
+
+#show th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #04AA6D;
+  color: white;
+}
+
+       ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+  background-color: #111;
+}
+.active {
+  background-color: #04AA6D;
+}
+</style>
+</head>
+
+<body>
+<ul>
+    <li><a href="/add">Add Product</a></li>
+<li><a href="/show">Show Products</a></li>
+<li><a href="/update">Update Products</a></li>
+<li><a href="/delete">Delete Products</a></li>
+<li><a href="/search">Search Products</a></li>
+</ul>
+<div class="row">
+    <div class="col-sm-8">
+<table id="show" border="2">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Name</th>
+            <th>Description</th>
+            <th>Price</th>
+        </tr>
+    </thead>
+</table>
+    </div>
+    <div class="col-sm-4">
+         <div class="form-group" id = "mainDiv">
+              <label>Id</label>
+              <input type="text" class="form-control" id="id" name="id">
+            </div>
+        "<form id="form" action="" method="POST">
+            <div class="form-group">
+              <label>Name</label>
+              <input type="text" class="form-control" id="name" name="name">
+            </div>
+            <div class="form-group">
+              <label>Description</label>
+              <textarea class="form-control" id="description" name="description" rows="4"></textarea>
+            </div>
+            <div class="form-group">
+              <label>Price</label>
+              <input type="number" step="any" class="form-control" id="price" name="price">
+            </div>
+            <input type="button" class="btn btn-primary" value="Update Product" id="submit">
+          </form>"
+        </div>
+</div>
+    <script>
+        var myData
+        $(document.body).ready(function (e) {
+           //doStuff
+            console.log("hello")
+                 $.ajax({type:"GET",
+                     url:"/api/productGet",
+                     success: function(result){
+                         myData = result
+                         console.log(myData)
+                         if(myData !=null || myData !=""){
+                            table = $('#show').DataTable( {
+                                data: myData ,destroy: true,
+                                columns: [
+                                    { data: '_id.$oid'},
+                                    { data: 'name' },
+                                    { data: 'description' },
+                                    { data: 'price' },
+
+                                ]
+                            } );
+                        }
+
+                  }});
+            $("#submit").on('click', function(){
+            // send ajax
+            var formdata = $("#form").serializeArray();
+            console.log(formdata)
+            var data = {};
+            $(formdata ).each(function(index, obj){
+                data[obj.name] = obj.value;
+            });
+            data=JSON.stringify(data)
+            id = document.getElementById("id").value
+            print(id)
+            $.ajax({
+                url: '/api/productUpdate/'+ id, // url where to submit the request
+                type : "PUT", // type of action POST || GET
+                data : data, // post data || get data
+                dataType : 'json',
+                contentType: "application/json; charset=utf-8",
+
+                success : function(result) {
+                    // you can see the result from the console
+                    // tab of the developer tools
+                        $("#msg").html(result["msg"])
+                },
+                error: function(xhr, resp, text) {
+                    $("#msg").html("Operation failed.")
+                    console.log(xhr, resp, text);
+                }
+            })
+
+        });
+        });
+
+    </script>
+
+
+</body>
+</html>
+
