@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contacts</title>
+</head>
+<body>
+<h3>Contact List</h3>
+<table border="2">
+<tr>
+    <td>Index</td>
+    <td>Name</td>
+<td>Mobile #</td>
+<td>City</td>
+<td>Profession</td>
+</tr>
+{% for contact in contacts %}
+    <tr>
+    <td>{{ contact[0] }}</td>
+    <td>{{ contact[1] }}</td>
+    <td>{{ contact[2] }}</td>
+    <td>{{ contact[3] }}</td>
+    <td>{{ contact[4] }}</td>
+    </tr>
+    {% endfor %}
+</table>
+<br><br>
+<form>
+<label>Enter index to delete:</label><br>
+<input type="number" name="index">
+    </form><br><br>
+<a href="http://127.0.0.1:5000/searchContact">Search Contact</a><br>
+    <a href="http://127.0.0.1:5000/addContact">Add Contact</a><br>
+    <a href="/logout">Logout</a><br>
+</body>
+</html>

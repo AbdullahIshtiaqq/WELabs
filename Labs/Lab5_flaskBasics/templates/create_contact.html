@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Add Contact</title>
+</head>
+<body>
+
+    <form action = "http://127.0.0.1:5000/addContact/extractData" method = "POST">
+        <label>Name:</label><br>
+        <input type="text" name = "name"><br>
+        <label>Mobile Number:</label><br>
+        <input type="text" name = "mobileno"><br>
+        <label>City:</label><br>
+        <input type="text" name = "city"><br>
+        <label>Profession:</label><br>
+        <input type="text" name = "profession"><br>
+        <input type="submit" name = "submit" value = "Add Contact">
+    </form>
+    {{ msg }}
+    <br><br>
+    <a href="http://127.0.0.1:5000/searchContact">Search Contact</a><br>
+    <a href="http://127.0.0.1:5000/displayContacts">DisplayAllContacts</a><br>
+        <a href="/logout">Logout</a><br>
+</body>
+</html>

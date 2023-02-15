@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Search Contact</title>
+</head>
+<body>
+
+<form action="/searchContact/getContact" method="POST">
+    <label>Enter name to search:</label><br>
+    <input type="text" name = "name"><br>
+    <input type="submit" name = "submit" value = "Search">
+</form>
+{{ msg }}
+
+<br><br>
+    <a href="http://127.0.0.1:5000/addContact">Back to Add Contact</a><br>
+    <a href="http://127.0.0.1:5000/displayContacts">DisplayAllContacts</a><br>
+    <a href="/logout">Logout</a><br>
+
+</body>
+</html>
