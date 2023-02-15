@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>	Register User</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+         <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.css">
+  	<script
+  src="http://code.jquery.com/jquery-3.3.1.js"
+  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+  crossorigin="anonymous"></script>
+	<script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.js"></script>
+<link rel="stylesheet" href="/static/css/form.css">]
+<script src="/static/registerUser.js"></script>
+
+
+</head>
+
+
+<body>
+<div class="main">
+<div class="book">
+	<h2>Register User </h2>
+
+<form id="book" method="post">
+
+	<label>Name</label><br><input type="text" class="fname" id="name" name="name" placeholder="Name"><br><br>
+<small class="text-muted">Enter digits only without dashes.</small><br>
+    <label>CNIC</label><br><input type="text" class="lname" id="cnic" name="cnic" placeholder="CNIC"><br><br>
+	<label>Mobile No.</label><br><input type="text" class="ph" id="mobileNo" name="mobileNo" placeholder="Mobile No."><br><br>
+    <label>Email</label><br><input type="text" class="desc" id="email" name="email" placeholder="Email"><br><br>
+<small class="text-muted">Your password must contain atleast one uppercase alphabet, one lowercase alphabet, one digit and one special character.</small>
+    <label>Password</label><br><input type="password" class="desc" id="password" name="password" placeholder="Password"><br><br>
+<label>Confirm Password</label><br><input type="password" class="desc" id="cPassword" name="cPassword" placeholder="Confirm Password"><br><br>
+
+  	<center><input type="button" class="book" value="submit" name="submit" id ="submit"></center>
+
+</form>
+</div>
+</div>
+
+  </body>
+</html>

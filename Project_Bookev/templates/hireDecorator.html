@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title> Hire decorator form </title>
+	<link rel="stylesheet"
+	href="/static/css/form.css" type="text/css">
+    <link rel="stylesheet"
+	href="/static/css/formTable.css" type="text/css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    	<script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.js"></script>
+    <script src="/static/hireDecorator.js"></script>
+</head>
+
+<body>
+<div class="main">
+<div class="book">
+	<h2>Hire Decorator</h2>
+	<form id="book" method="post">
+
+    	<label>Event time : </label>
+	<br>
+    	<input type="time" name="endTime" id ="endTime" class="time">
+	<br><br>
+
+    	<label>Event date : </label>
+	<br>
+    	<input type="date" name="date" class="date" id="date" >
+	<br><br>
+
+    	<label>	Estimated no. of hours required : </label>
+	<br>
+    	<input type="text" name="desc" class ="desc" placeholder="No. of Hours required">
+	<br><br>
+
+ <small class="text-muted mb-4">If the work of decorator exceeds estimated number of hours, you will need to pay overtime.</small><br><br>
+	<center><input type="button" value="Submit"class="book" name="book" id ="bookSubmit"></center>
+</form>
+
+</div>
+</div>
+<br><br>
+<center><strong><H1 style="color:#eae781 ; font-family: VERDANA;">REVIEWS ABOUT THIS SERVICE PROVIDER</H1></strong><br></center>
+
+<center><table class="show" id="show" class="show mb-5" border="2">
+    <thead>
+            <tr>
+                <th>User Mail</th>
+                <th>Feedback</th>
+
+            </tr>
+        </thead>
+
+</table></center>
+
+</body>
+
+</html>

@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>BookEv</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="../static/css/homepage.css">
+    <script src="/static/homepage.js"></script>
+</head>
+<body>
+    <div class="navigationBar">
+        <center><img src="../static/Pictures/logo.png" height="100px" alt="Logo"></center>
+        <div class="row justify-content-center">
+         <ul style= "list-style:none" class="mt-4">
+            <div class="row justify-content-center">
+             <li><a href="/" class="menuOption">HOME</a></li>
+             <li><a href="/bookev/photography"class="menuOption ml-5">PHOTOGRAPHY</a></li>
+             <li><a href="/bookev/catering" class="menuOption ml-5">CATERING </a></li>
+             <li><a href="/bookev/designing" class="menuOption ml-5">DESIGNING </a></li>
+             <li><a href="/bookev/decoration" class="menuOption ml-5">DECORATION</a></li>
+             <li><a href="/bookev/venue" class="menuOption ml-5">VENUE</a></li>
+             <li><a href="/bookev/events" class="menuOption ml-5">EVENT</a></li>
+             <div id="withoutLogin">
+                 <div class="dropdown">
+                    <li><a href="#" class="menuOption ml-5">LOGIN</a>
+                        <div class="dropdown-content">
+                        <a href="/bookev/login/user">Login User</a>
+                        <a href="/bookev/login/service">Login Service</a>
+                    </div>
+                 </div>
+                 <div class="dropdown">
+                    <li><a href="#" class="menuOption ml-5 dropbtn" style="font-size:18px"><strong>SIGNUP</strong></a>
+                        <div class="dropdown-content">
+                        <a href="/bookev/signup/user">Signup User</a>
+                        <a href="/bookev/signup/service">Signup Service</a>
+                    </div>
+                 </div>
+             </div>
+             <div id="withLogin">
+                 <div class="dropdown">
+                     <li><button id="logout" style="background: none;color: inherit;border: none;padding: 0;font: inherit;cursor: pointer;outline: inherit;"><a href="" class="menuOption ml-5">LOGOUT</a></button></li>
+                 </div>
+                 <div class="dropdown">
+                    <li><a href="/bookev/myProfile" class="menuOption ml-5 dropbtn" style="font-size:18px"><strong>PROFILE</strong></a>
+                    </div>
+                 </div>
+             </div>
+         </ul>
+        </div>
+     </div>
+
+<div style="box-shadow: 10px 10px 5px #a6bb8d inset; background-color:#61876e; height:550px;">
+    <div class="row">
+        <div class="col-sm-8">
+            <img src="../static/Pictures/homeMain.jpg" alt="Event" style="width:100%; height:600px;" class="mt-2">
+        </div>
+        <div class="col-sm-4" style="padding-top: 120px;">
+            <h2 style="font-family: Lucida Handwriting; color:#eae781; line-height: 175%;">All services you need for your event are planned under one roof!</h2>
+        </div>
+    </div>
+</div>
+
+ <div class="container-fluid pt-5" style="background-color:#e1dcda;">
+        <div class="container">
+            <div class="section-title position-relative text-center mx-auto mb-5 pb-3"style="max-width: 600px; padding-top:50px;">
+                <h1 class="display-5 text-uppercase">Welcome To bookev</h1>
+                <i class="fa-solid fa-camera fa-2x mt-2"></i>
+                <i class="fa-solid fa-hat-cowboy fa-2x ml-2"></i>
+                <i class="fa-solid fa-utensils fa-2x ml-2"></i>
+                <i class="fa-solid fa-champagne-glasses fa-2x ml-2"></i>
+                <i class="fa-regular fa-calendar-check fa-2x ml-2"></i>
+            </div>
+            <div class="row gx-5">
+
+                <div class="col-sm-8 pb-5">
+                    <h4 class="mb-4">Founded in 2003, we are continually enhancing a reputation for creating unforgettable experiences that motivate, inspire, engage and inform anywhere in the world.</h4>
+
+                    <p class="mb-5">If 'Your World' involves awards shows, banquets, conferences, exhibitions, experiential events, launches or road shows - indoors or outdoors; then welcome to 'Our World' of an in-house team of event producers, designers, technicians and creatives. We design and deliver unique events and campaigns, to improve business performance, motivate, reward, excite & inspire, always ensuring that you are engaging with your audience in the best possible manner.</p>
+
+                    <p class="mb-5">
+                    We can cover all aspects of your event, from concept through to delegate management, logistics, creative content, video, stage set & exhibition design and of course delivering on the day. Your World, is Our World, Around the world. Call us to see how we could make your next event, out of this world.</p>
+
+                    <div class="row g-5">
+                        <div class="col-sm-6">
+                            <div class="ml-3 align-items-center justify-content-center mb-4">
+                                <img src="../static/Pictures/success.jpg" alt ="Handshake" style="width: 90px; height: 90px;">
+                            </div>
+                            <h4 class="text-uppercase">97% Success Rate</h4>
+                            <p class="mb-0">We are a best-effort company. We ensure responsibility of our service providers by making regular checks and keeping them motivated.</p>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="ml-3 align-items-center justify-content-center mb-4">
+                                <img src="../static/Pictures/award.jpg" alt ="Trophy" style="width: 90px; height: 90px;">
+                            </div>
+                            <h4 class="text-uppercase">Highly recognised</h4>
+                            <p class="mb-0">Best practice award winner in 2022. Highly appreciated for maintaining SOPs during covid outbreak. We value discipline above all.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="ct-blog col-sm-4">
+                    <div class="row">
+        <div class="inner">
+          <div class="fauxcrop">
+            <a href="https://humawards.com/"><img alt="Hum Awards" src="../static/Pictures/humawards.jpg"></a>
+          </div>
+          <div class="ct-blog-content">
+            <div class="ct-blog-date">
+              <strong>24</strong><span>September</span><span class="mt-2">2022</span>
+            </div>
+            <h3 class="ct-blog-header">
+              Organised and planned all important 8th Hum Style Awards
+            </h3>
+          </div>
+        </div>
+      </div>
+      <div class="row mt-5">
+        <div class="inner">
+          <div class="fauxcrop">
+            <a href="http://toyota-tsfm.com/TCMEvents/EventDetail/14"><img alt="Toyota Art Contest" src="../static/Pictures/toyota.jpg"></a>
+          </div>
+          <div class="ct-blog-content">
+            <div class="ct-blog-date">
+              <strong>23</strong><span>Februrary</span><span class="mt-2">2014</span>
+            </div>
+            <h3 class="ct-blog-header">
+              Designed theme for 8th Toyota Dream Car Contest for Kids
+            </h3>
+          </div>
+        </div>
+      </div>
+  </div>
+
+
+
+            </div>
+        </div>
+    </div>
+<div class="container-fluid pt-5" style="background-color:#e1dcda;">
+      </div>
+
+    <div class="container-fluid" id="red">
+         <div class="row">
+             <div  class = "col-4" id="heading">
+                <h2 style="font-family:Lucida Handwriting; padding-top: 70px;">Services We Provide</h2>
+                <p>We have highly skilled professionals who are creative, innovative and forward thinking for each type of service we offer. Explore some of the work done by our service providers and reach us to let us make your event memorable.</p>
+             </div>
+             <div  class = "col-8" id="parts">
+                 <div class="row">
+                     <div  class = "col-lg" id="part1">
+                         <div class="redirect">
+                             <h5 >Photography </h5>
+                             <img src="https://assets.website-files.com/5f77703c1a006331489fea65/5f77703c1a0063c54d9fea9c_Arrow%206.png" loading="lazy" alt="" class="colour-btn-arrow">
+                         </div>
+
+
+                     </div>
+                     <div  class = "col-lg" id="part2">
+                          <div class="redirect">
+                             <h5>Catering</h5>
+                             <img src="https://assets.website-files.com/5f77703c1a006331489fea65/5f77703c1a0063c54d9fea9c_Arrow%206.png" loading="lazy" alt="" class="colour-btn-arrow">
+                         </div>
+                     </div>
+                     <div  class = "col-lg" id="part3">
+                          <div class="redirect">
+                             <h5>Designing</h5>
+                             <img src="https://assets.website-files.com/5f77703c1a006331489fea65/5f77703c1a0063c54d9fea9c_Arrow%206.png" loading="lazy" alt="" class="colour-btn-arrow">
+                         </div>
+                     </div>
+                     <div  class = "col-lg" id="part4">
+                          <div class="redirect">
+                             <h5>Decoration</h5>
+                             <img src="https://assets.website-files.com/5f77703c1a006331489fea65/5f77703c1a0063c54d9fea9c_Arrow%206.png" loading="lazy" alt="" class="colour-btn-arrow">
+                         </div>
+                     </div>
+                     <div  class = "col-lg" id="part5">
+                          <div class="redirect">
+                             <h5>Venues</h5>
+                             <img src="https://assets.website-files.com/5f77703c1a006331489fea65/5f77703c1a0063c54d9fea9c_Arrow%206.png" loading="lazy" alt="" class="colour-btn-arrow">
+                         </div>
+                     </div>
+                     <div  class = "col-lg" id="part6">
+                          <div class="redirect">
+                             <h5>Full Events</h5>
+                             <img src="https://assets.website-files.com/5f77703c1a006331489fea65/5f77703c1a0063c54d9fea9c_Arrow%206.png" loading="lazy" alt="" class="colour-btn-arrow">
+                         </div>
+                     </div>
+                 </div>
+             </div>
+
+         </div>
+
+     </div>
+
+      <div class="container-fluid pt-5" style="background-color:#e1dcda;">
+      </div>
+
+
+
+    <div class="contactDiv">
+      <p class="font-weight-bold"style="font-size: 30px; padding-left: 70px;">Contact Us</p>
+
+      <div class="row justify-content-center">
+
+        <div class="col-sm">
+          <div class="row" style="padding-left: 20%;">
+            <img src="https://uxwing.com/wp-content/themes/uxwing/download/communication-chat-call/accept-call-icon.png" alt="Phone:" width="25px" height="25px">
+            <p class="ml-2">+923321149474</p>
+          </div>
+        </div>
+
+        <div class="col-sm">
+          <div class="row" style="padding-left: 20%;">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/640px-Instagram_icon.png" alt="Instagram:" width="25px" height="25px">
+            <p class="ml-2">book.ev_planner</p>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="row justify-content-center">
+
+        <div class="col-sm">
+          <div class="row" style="padding-left: 20%;">
+            <img src="https://cdn-icons-png.flaticon.com/512/6948/6948631.png" alt="Phone:" width="25px" height="25px">
+            <p class="ml-2">Old Anarkali, Mall Road, Lahore, Pakistan</p>
+          </div>
+        </div>
+
+        <div class="col-sm">
+          <div class="row" style="padding-left: 19%;">
+            <img class="ml-2" src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Facebook_Logo_%282019%29.png/1200px-Facebook_Logo_%282019%29.png" alt="Facebook:" width="25px" height="25px">
+            <p class="ml-2">The Bookev</p>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="row justify-content-center">
+        <p>Copyright © The Soft Crafts 2023. All rights reserved.</p>
+      </div>
+
+    </div>
+
+</body>
+</html>

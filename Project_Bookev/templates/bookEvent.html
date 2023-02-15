@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Full event </title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+         <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.css">
+  	<script
+  src="http://code.jquery.com/jquery-3.3.1.js"
+  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+  crossorigin="anonymous"></script>
+	<script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.js"></script>
+
+<link rel="stylesheet" href="/static/css/form.css">
+    <script src="/static/bookEvent.js"></script>
+
+</head>
+
+<body>
+<div class="main">
+<div class="book">
+
+	<h2>Book Full Event</h2>
+    <form id="book"  method="post" >
+Start Time: <input type="time" class="time" name="startTime" id ="startTime"><br><br>
+End Time: <input type="time" class="time" name="endTime"  id="endTime"><br><br>
+Date: <input type="date" class="date" name="date" id="date"> <br><br>
+        Description: <textarea id="description" name="description" rows="4" cols="50"></textarea><br><br>
+<center><input id="submit" type="button" class="book" name="submit" value="submit"></center>
+</form>
+</div>
+</div>
+
+</body>
+</html>

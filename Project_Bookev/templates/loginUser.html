@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>	User login form </title>
+	<link rel="stylesheet"
+	href="/static/css/form.css" type="text/css">
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="/static/loginUser.js"></script>
+</head>
+
+
+<body>
+<div class="main">
+<div class="book">
+	<h2>User Login</h2>
+	<form id="book" method="post">
+
+
+	<label>Email</label>
+	<br>
+        <input type="email" class="desc" name="email" placeholder="Email">
+        <br><br>
+ 
+        <label>Password</label>
+	<br>
+        <input type="password" class="desc" name="password" placeholder="Password">
+     	<br><br>
+
+
+	<center><input type="button" value="Login" name="book" class="book" id ="bookSubmit"></center>
+
+        </form>
+
+<center>
+         <p class="text-center mt-3">
+            Don't have an account? <a href="/bookev/signup/user">Create one</a>
+         </p>
+
+         <p class="text-center">
+            Login as service provider? <a href="/bookev/login/service">Click here</a>
+         </p>
+<br><br>
+</center>
+</div>  
+</div>
+
+  </body>
+</html>

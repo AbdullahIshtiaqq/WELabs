@@ -1,0 +1,144 @@
+h1,
+        h2,
+        .font-weight-bold {
+            font-weight: 700 !important;
+        }
+
+        h3,
+        h4,
+        .font-weight-semi-bold {
+            font-weight: 600 !important;
+        }
+
+        /* CSS for Navigation Bar */
+
+        .navigationBar{
+            background-color: #3c6255;
+            height: 170px;
+        }
+        .menuOption{
+            font-size: 18px;
+            font-family: VERDANA;
+            color: white;
+            font-weight: bold;
+        }
+        a:hover{
+            color: black;
+            text-decoration: none;
+        }
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #3b3837;
+            min-width: 160px;
+            z-index: 1;
+        }
+        .dropdown-content a {
+            font-size: 15px;
+            font-family: VERDANA;
+            color: white;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+        .dropdown-content a:hover {
+            background-color: #ddd;
+            color:black
+        }
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+
+        /* CSS for Contact Us */
+
+        .contactDiv{
+            background-color: #292927;
+            height: 180px;
+            color: white;
+        }
+
+/* Import Google font - Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+.images{
+  display: flex;
+  padding: 0 35px;
+  min-height: 60vh;
+  align-items: center;
+  justify-content: center;
+  background: #343F4F;
+}
+.wrapper{
+  display: flex;
+  max-width: 1200px;
+  position: relative;
+}
+.wrapper i{
+  top: 50%;
+  height: 44px;
+  width: 44px;
+  color: #343F4F;
+  cursor: pointer;
+  font-size: 1.15rem;
+  position: absolute;
+  text-align: center;
+  line-height: 44px;
+  background: #fff;
+  border-radius: 50%;
+  transform: translateY(-50%);
+  transition: transform 0.1s linear;
+}
+.wrapper i:active{
+  transform: translateY(-50%) scale(0.9);
+}
+.wrapper i:hover{
+  background: #f2f2f2;
+}
+.wrapper i:first-child{
+  left: -22px;
+  display: none;
+}
+.wrapper i:last-child{
+  right: -22px;
+}
+.wrapper .carousel{
+  font-size: 0px;
+  cursor: pointer;
+  overflow: hidden;
+  white-space: nowrap;
+  scroll-behavior: smooth;
+}
+.carousel.dragging{
+  cursor: grab;
+  scroll-behavior: auto;
+}
+.carousel.dragging img{
+  pointer-events: none;
+}
+.carousel img{
+  height: 340px;
+  object-fit: cover;
+  user-select: none;
+  margin-left: 14px;
+  width: calc(100% / 3);
+}
+.carousel img:first-child{
+  margin-left: 0px;
+}
+
+@media screen and (max-width: 900px) {
+  .carousel img{
+    width: calc(100% / 2);
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .carousel img{
+    width: 100%;
+  }
+}

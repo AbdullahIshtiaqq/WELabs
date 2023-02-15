@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>User Profile</title>
+
+          <!-- Latest compiled and minified CSS -->
+      <link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet">
+      <link rel="stylesheet" href="https://cdn.datatables.net/1.12.1/css/jquery.dataTables.min.css">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+         <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.css">
+
+  	<script
+  src="http://code.jquery.com/jquery-3.3.1.js"
+  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+  crossorigin="anonymous"></script>
+	<script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.js"></script>
+
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="/static/css/userProfile.css">
+    <link rel="stylesheet" type="text/css" href="/static/css/main.css">
+    <link rel="stylesheet" type="text/css" href="/static/css/table.css">
+    <script src="/static/userProfile.js"></script>
+
+</head>
+<body>
+        <div class="navigationBar">
+        <center><img src="../static/Pictures/logo.png" height="100px" alt="Logo"></center>
+        <div class="row justify-content-center">
+         <ul style= "list-style:none" class="mt-4">
+            <div class="row justify-content-center">
+             <li><a href="/" class="menuOption">HOME</a></li>
+             <li><a href="/bookev/photography"class="menuOption ml-5">PHOTOGRAPHY</a></li>
+             <li><a href="/bookev/catering" class="menuOption ml-5">CATERING </a></li>
+             <li><a href="/bookev/designing" class="menuOption ml-5">DESIGNING </a></li>
+             <li><a href="/bookev/decoration" class="menuOption ml-5">DECORATION</a></li>
+             <li><a href="/bookev/venue" class="menuOption ml-5">VENUE</a></li>
+             <li><a href="/bookev/events" class="menuOption ml-5">EVENT</a></li>
+             <div id="withoutLogin">
+                 <div class="dropdown">
+                    <li><a href="#" class="menuOption ml-5">LOGIN</a>
+                        <div class="dropdown-content">
+                        <a href="/bookev/login/user">Login User</a>
+                        <a href="/bookev/login/service">Login Service</a>
+                    </div>
+                 </div>
+                 <div class="dropdown">
+                    <li><a href="#" class="menuOption ml-5 dropbtn" style="font-size:18px"><strong>SIGNUP</strong></a>
+                        <div class="dropdown-content">
+                        <a href="/bookev/signup/user">Signup User</a>
+                        <a href="/bookev/signup/service">Signup Service</a>
+                    </div>
+                 </div>
+             </div>
+             <div id="withLogin">
+                 <div class="dropdown">
+                     <li><button id="logout" style="background: none;color: inherit;border: none;padding: 0;font: inherit;cursor: pointer;outline: inherit;"><a href="" class="menuOption ml-5">LOGOUT</a></button></li>
+                 </div>
+                 <div class="dropdown">
+                    <li><a href="/bookev/myProfile" class="menuOption ml-5 dropbtn" style="font-size:18px"><strong>PROFILE</strong></a>
+                    </div>
+                 </div>
+             </div>
+         </ul>
+        </div>
+     </div>
+
+
+
+
+    <br>
+    <br>
+    <br>
+    <br>
+
+
+
+
+
+    <div class="card1">
+           <center> <img src="../static/Pictures/male.webp" alt="Event" style="width:250px" style="height:250px"></center>
+  <h1 id="name"></h1>
+  <p id="email"></p>
+  <p id="mobile"></p>
+        <br>
+   </div>
+
+
+
+    <br>
+    <br>
+    <br>
+
+
+
+
+
+
+
+<center><strong><H1 style="color:#343F4F ; font-family: VERDANA;"> BOOKINGS</H1></strong><br></center>
+
+<table class="show" id="show" border="2">
+    <thead>
+            <tr>
+                <th>Service Mail</th>
+                <th>Date</th>
+                <th>Charges</th>
+
+
+
+            </tr>
+        </thead>
+
+
+</table>
+<br>
+    <br>
+    <br>
+    <div class="card">
+	<form id="book" method="post">
+
+        <label style="text-align: left;color:black; font-family:VERDANA ;">	<br><br><br><strong>Service Mail: </strong> </label><br><input type="text" name="serviceMail" id ="serviceMail" placeholder="Service Mail"><br><br>
+        <label style="text-align: left ;color:black; font-family: VERDANA;"><strong>	Feedback : </strong></label><br><textarea name="feedback" id ="feedback" placeholder="Enter your Feedback..." rows="6" cols="62"></textarea><br><br>
+	<center><input type="button" value="Submit" name="submit" id ="submit"></center>
+</form>
+
+
+   </div>
+
+    <br>
+    <br>
+    <br>
+
+
+
+
+
+
+    <div class="contactDiv">
+      <p class="font-weight-bold"style="font-size: 30px; padding-left: 70px;">Contact Us</p>
+
+      <div class="row justify-content-center">
+
+        <div class="col-sm">
+          <div class="row" style="padding-left: 20%;">
+            <img src="https://uxwing.com/wp-content/themes/uxwing/download/communication-chat-call/accept-call-icon.png" alt="Phone:" width="25px" height="25px">
+            <p class="ml-2">+923321149474</p>
+          </div>
+        </div>
+
+        <div class="col-sm">
+          <div class="row" style="padding-left: 20%;">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/640px-Instagram_icon.png" alt="Instagram:" width="25px" height="25px">
+            <p class="ml-2">book.ev_planner</p>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="row justify-content-center">
+
+        <div class="col-sm">
+          <div class="row" style="padding-left: 20%;">
+            <img src="https://cdn-icons-png.flaticon.com/512/6948/6948631.png" alt="Phone:" width="25px" height="25px">
+            <p class="ml-2">Old Anarkali, Mall Road, Lahore, Pakistan</p>
+          </div>
+        </div>
+
+        <div class="col-sm">
+          <div class="row" style="padding-left: 19%;">
+            <img class="ml-2" src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Facebook_Logo_%282019%29.png/1200px-Facebook_Logo_%282019%29.png" alt="Facebook:" width="25px" height="25px">
+            <p class="ml-2">The Bookev</p>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="row justify-content-center">
+        <p>Copyright © The Soft Crafts 2023. All rights reserved.</p>
+      </div>
+
+    </div>
+
+ </div>
+
+</body>
+</html>

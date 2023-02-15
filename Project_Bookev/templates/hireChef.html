@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>	Hire chef form </title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+	<script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.js"></script>
+	<link rel="stylesheet"
+	href="/static/css/form.css" type="text/css">
+    <link rel="stylesheet"
+	href="/static/css/formTable.css" type="text/css">
+    <script src="/static/hireChef.js"></script>
+</head>
+
+<body>
+<div class="main">
+<div class="book">
+	<h2>Hire Chef</h2>
+	<form id="book" method="post">
+
+	<label>Event date : </label>
+	<br>
+    	<input type="date" name="date" class="date" id="date" >
+	<br><br>
+
+
+    	<label>Time of serving food : </label>
+	<br>
+    	<input type="time" class="time" name="startTime" id ="startTime" >
+	<br><br>
+
+    	
+
+    	<label>No of dishes : </label>
+	<br>
+    	<input type="number" name="dishes" class ="ph" placeholder="No. of dishes">
+	<br><br>
+
+	<label>No of guests : </label>
+	<br>
+    	<input type="number" name="guests" class ="ph" placeholder="No. of guests">
+	<br><br>
+
+
+	<center><input type="button" value="Submit" name="book" id="bookChef" class ="book"></center>
+</form>
+
+</div>
+
+</div>
+<br><br>
+<center><strong><H1 style="color:#eae781 ; font-family: VERDANA;">REVIEWS ABOUT THIS SERVICE PROVIDER</H1></strong><br></center>
+
+<center><table class="show" id="show" class="show mb-5" border="2">
+    <thead>
+            <tr>
+                <th>User Mail</th>
+                <th>Feedback</th>
+            </tr>
+        </thead>
+
+
+</table></center>
+</body>
+</html>

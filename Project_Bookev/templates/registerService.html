@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+    <title>Register Service</title>
+	<link rel="stylesheet" href="/static/css/form.css" type="text/css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="/static/registerService.js"></script>
+</head>
+
+<body>
+<div class="main">
+<div class="book">
+	<h2>Register Service</h2>
+	<form id="book" method="post">
+
+
+        <label>Name : </label>
+	<br>
+        <input type="text"  class="desc" name="name" placeholder="Name" required>
+	<br><br>
+
+
+        <small class="text-muted">Enter digits only without dashes.</small><br>
+
+
+        <label>CNIC : </label>
+	<br>
+        <input type="text"  class="desc" name="cnic" placeholder="CNIC" required>
+	<br><br>
+
+
+
+
+        <label>Mobile No. : </label>
+	<br>
+        <input type="text" class="form-control desc" name="mobileNo" placeholder="Mobile no." required >
+	<br><br>
+
+        <label>Email : </label>
+	<br>
+        <input type="email" class="form-control desc" name="email" placeholder="Email"  required>
+	<br><br>
+
+
+	<small class="text-muted">Your password must contain atleast one uppercase alphabet, one lowercase alphabet, one digit and one special character.</small>
+	<br>
+
+
+        <label>Password : </label>
+	<br>
+        <input type="password" class="form-control desc" name="password" placeholder="Password"  required>
+	<br><br>
+
+
+        <label>Confirm Password : </label>
+	<br>
+        <input type="password" class="form-control desc" name="cPassword" placeholder="Confirm Password"  required>
+	<br><br>
+
+
+        <label>Service Type : </label>
+	<br>
+        <select class="desc" name="type">
+              <option>Photographer</option>
+              <option>Chef</option>
+              <option>Dressing Designer</option>
+              <option>Theme Decorator</option>
+              <option>Venue</option>
+        </select>
+	<br><br>
+        <div id="photography">
+            <label>Hourly Rate (PKR) : </label><br><input type="number" min="0" step="any" class="form-control desc" name="hourlyRate" placeholder="Hourly Rate"><br><br>
+            <label>Portfolio Link : </label><br><input type="text" class="form-control desc" name="portfolio" placeholder="Portfolio"><br><br>
+            <label>Speciality : </label><br><input type="text" class="form-control desc" name="speciality" placeholder="Speciality"><br><br>
+        </div>
+        <div id="chef">
+            <label>Experience (Years) : </label><br><input type="number" class="form-control desc" min="0" name="experience" placeholder="Experience"><br><br>
+            <label>Speciality : </label><br><input type="text" class="form-control desc" name="speciality" placeholder="Speciality"><br><br>
+            <label>Charges (Per Dish) : </label><br><input type="number" min="0" step="any" class="form-control desc" name="charges" placeholder="Charges"><br><br>
+        </div>
+        <div id="dressing_designer">
+            <label>Experience (Years) : </label><br><input type="number" min="0" class="form-control desc" name="experience" placeholder="Experience"><br><br>
+            <label>Speciality : </label><br><input type="text" class="form-control desc" name="speciality" placeholder="Speciality"><br><br>
+            <label>Charges (Per Dress) : </label><br><input type="number" min="0" step="any" class="form-control desc" name="charges" placeholder="Charges"><br><br>
+            <label>Max Limit (No of dresses) : </label><br><input type="number" min="1" class="form-control desc" name="maxLimit" placeholder="Max Limit"><br><br>
+        </div>
+        <div id="theme_decorator">
+            <label>Experience (Years) : </label><br><input type="number" min="0" class="form-control desc" name="experience" placeholder="Experience"><br><br>
+            <label>Speciality : </label><br><input type="text" class="form-control desc" name="speciality" placeholder="Speciality"><br><br>
+            <label>Charges (Per Hour) : </label><br><input type="number" min="0" step="any" class="form-control desc" name="charges" placeholder="Charges"><br><br>
+        </div>
+        <div id="venue">
+            <label>Capacity : </label><br><input type="number" min="0" class="form-control desc" name="capacity" placeholder="Capacity"><br><br>
+            <label>Address : </label><br><input type="text" class="form-control desc" name="address" placeholder="Address"><br><br>
+            <label>Charges (Per Hour) : </label><br><input type="number" min="0" step="any" class="form-control desc" name="charges" placeholder="Charges"><br><br>
+        </div>
+  	<center><input type="button" value="Register" class="book" name="book" id ="submit"></center>
+
+</form>
+</div>
+</div>
+</body>
+</html>

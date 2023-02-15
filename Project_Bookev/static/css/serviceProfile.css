@@ -1,0 +1,29 @@
+body{
+
+            background-color: #95A5A6;
+        }
+        .card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 400px;
+  margin: auto;
+  background-color: lightpink;
+  text-align: center;
+}
+
+
+
+        /* CSS for Navigation Bar */
+
+        .navigationBar{
+            background-color: #3c6255;
+            height: 120px;
+        }
+
+
+        /* CSS for Contact Us */
+
+        .contactDiv{
+            background-color: #292927;
+            height: 180px;
+            color: white;
+        }

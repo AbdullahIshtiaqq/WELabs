@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Photography</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="/static/css/main.css">
+    <link rel="stylesheet" type="text/css" href="/static/css/table.css">
+          <!-- Latest compiled and minified CSS -->
+
+
+      <link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet">
+      <link rel="stylesheet" href="https://cdn.datatables.net/1.12.1/css/jquery.dataTables.min.css">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+         <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.css">
+  	<script
+  src="http://code.jquery.com/jquery-3.3.1.js"
+  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+  crossorigin="anonymous"></script>
+	<script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.js"></script>
+<script src="/static/photography.js" defer></script>
+</head>
+<body>
+   <div class="navigationBar">
+        <center><img src="../static/Pictures/logo.png" height="100px" alt="Logo"></center>
+        <div class="row justify-content-center">
+         <ul style= "list-style:none" class="mt-4">
+            <div class="row justify-content-center">
+             <li><a href="/" class="menuOption">HOME</a></li>
+             <li><a href="/bookev/photography"class="menuOption ml-5">PHOTOGRAPHY</a></li>
+             <li><a href="/bookev/catering" class="menuOption ml-5">CATERING </a></li>
+             <li><a href="/bookev/designing" class="menuOption ml-5">DESIGNING </a></li>
+             <li><a href="/bookev/decoration" class="menuOption ml-5">DECORATION</a></li>
+             <li><a href="/bookev/venue" class="menuOption ml-5">VENUE</a></li>
+             <li><a href="/bookev/events" class="menuOption ml-5">EVENT</a></li>
+             <div id="withoutLogin">
+                 <div class="dropdown">
+                    <li><a href="#" class="menuOption ml-5">LOGIN</a>
+                        <div class="dropdown-content">
+                        <a href="/bookev/login/user">Login User</a>
+                        <a href="/bookev/login/service">Login Service</a>
+                    </div>
+                 </div>
+                 <div class="dropdown">
+                    <li><a href="#" class="menuOption ml-5 dropbtn" style="font-size:18px"><strong>SIGNUP</strong></a>
+                        <div class="dropdown-content">
+                        <a href="/bookev/signup/user">Signup User</a>
+                        <a href="/bookev/signup/service">Signup Service</a>
+                    </div>
+                 </div>
+             </div>
+             <div id="withLogin">
+                 <div class="dropdown">
+                     <li><button id="logout" style="background: none;color: inherit;border: none;padding: 0;font: inherit;cursor: pointer;outline: inherit;"><a href="" class="menuOption ml-5">LOGOUT</a></button></li>
+                 </div>
+                 <div class="dropdown">
+                    <li><a href="/bookev/myProfile" class="menuOption ml-5 dropbtn" style="font-size:18px"><strong>PROFILE</strong></a>
+                    </div>
+                 </div>
+             </div>
+         </ul>
+        </div>
+     </div>
+
+<div style="box-shadow: 10px 10px 5px #a6bb8d inset; background-color:#61876e; height:550px;">
+    <div class="row">
+        <div class="col-sm-8">
+            <img src="../static/Pictures/photographyMain.jpg" alt="Camera" style="width:100%; height:600px;" class="mt-2">
+        </div>
+        <div class="col-sm-4" style="padding-top: 120px;">
+            <h2 style="font-family: Lucida Handwriting; color:#eae781; line-height: 175%;">We don't take a photograph, we make it!</h2>
+        </div>
+    </div>
+</div>
+
+ <div class="container-fluid pt-5" style="background-color:#e1dcda;">
+        <div class="container">
+            <div class="section-title position-relative text-center mx-auto mb-5 pb-3"style="max-width: 600px; padding-top:50px;">
+                <h1 class="display-5 text-uppercase">photography</h1>
+                <i class="fa-solid fa-camera fa-2x mt-2"></i>
+                <i class="fa-solid fa-video fa-2x ml-2"></i>
+                <i class="fa-solid fa-camera-retro fa-2x ml-2"></i>
+            </div>
+            <div class="row gx-5">
+
+                <div class="col-sm-8 pb-5">
+                    <h4 class="mb-4">There is one thing the photograph must contain,<br>the humanity of the moment.</h4>
+
+                    <p class="mb-5">We cover party photography, corporate photography, birthday photography and store launch photography. Our Photographers have captured scores of corporate events till date. Our long list of happy clientele is a proof of our excellence in event photography. Our motto is that you enjoy your event and preserving your joy on reel is our job. And our long list of event photography is a proof that we do it like no one else. We have a list of photographers specialized in different type of events, you can choose them according to your needs after reviewing their past work.</p>
+
+            </div>
+            <div class="col-sm-1 pb-5">
+
+            </div>
+            <div class="col-sm-3 pb-5">
+                    <div class="ml-3 align-items-center justify-content-center mb-4">
+                                <img src="../static/Pictures/10k.png" alt ="10k+" style="width: 90px; height: 90px;">
+                            </div>
+                            <h4 class="text-uppercase">10k+ Snapshots</h4>
+                            <p class="mb-0">Our skilled photographers have collectively contributed to more than 10 thousands photographs.</p>
+
+            </div>
+        </div>
+    </div>
+ </div>
+
+
+    <div class="images">
+<div class="wrapper">
+      <i id="left" class="fa-solid fa-angle-left" style="z-index: 1;"></i>
+      <div class="carousel">
+        <img src="../static/Pictures/weddingPhotography1.jpg" alt="img" draggable="false">
+        <img src="../static/Pictures/weddingPhotography3.jpg" alt="img" draggable="false">
+        <img src="../static/Pictures/weddingPhotography4.jpg" alt="img" draggable="false">
+        <img src="../static/Pictures/weddingPhotography5.jpg" alt="img" draggable="false">
+        <img src="../static/Pictures/weddingPhotography6.jpg" alt="img" draggable="false">
+        <img src="../static/Pictures/birthdayPartyPhotography.jpg" alt="img" draggable="false">
+          <img src="../static/Pictures/birthdayPartyPhotography2.jpg" alt="img" draggable="false">
+          <img src="../static/Pictures/birthdayPartyPhotography3.jpg" alt="img" draggable="false">
+          <img src="../static/Pictures/birthdayPartyPhotography4.jpg" alt="img" draggable="false">
+
+
+      </div>
+      <i id="right" class="fa-solid fa-angle-right"></i>
+    </div>
+</div>
+
+   </div>
+
+<div class="container-fluid pt-5" style="background-color:#e1dcda;">
+      </div>
+    <table class="show" id="show" class="mt-5" border="2">
+    <thead>
+            <tr>
+                 <th>Id</th>
+                <th>Name</th>
+                <th>Hourly Rate (PKR)</th>
+                <th>Portfolio</th>
+                <th>Speciality</th>
+
+            </tr>
+        </thead>
+</table>
+    <center><p class="mt-3" id="para"><a href="/bookev/login/user" style="display: inline-block;padding: 8px 16px;background-color: dodgerblue;color: white; text-decoration: none; border-radius: 4px;">Login</a> to view list of photographers.</p><br></center>
+<div id="inputField">
+    <center>
+        <label style="display: block;
+        font-size: 1.2em;
+        margin-bottom: 8px;">Enter Id to hire Photographer:</label>
+        <input style="padding: 8px;
+        font-size: 1em;
+        border-radius: 4px;
+        border: 1px solid gray;
+        width: 300px;" type="text" name="text" id="id">
+        <input type="button" class="btn btn-primary" id="hirePhotographer" value = "Book">
+    </center>
+</div>
+
+    <div class="contactDiv mt-5">
+      <p class="font-weight-bold"style="font-size: 30px; padding-left: 70px;">Contact Us</p>
+
+      <div class="row justify-content-center">
+
+        <div class="col-sm">
+          <div class="row" style="padding-left: 20%;">
+            <img src="https://uxwing.com/wp-content/themes/uxwing/download/communication-chat-call/accept-call-icon.png" alt="Phone:" width="25px" height="25px">
+            <p class="ml-2">+923321149474</p>
+          </div>
+        </div>
+
+        <div class="col-sm">
+          <div class="row" style="padding-left: 20%;">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/640px-Instagram_icon.png" alt="Instagram:" width="25px" height="25px">
+            <p class="ml-2">book.ev_planner</p>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="row justify-content-center">
+
+        <div class="col-sm">
+          <div class="row" style="padding-left: 20%;">
+            <img src="https://cdn-icons-png.flaticon.com/512/6948/6948631.png" alt="Phone:" width="25px" height="25px">
+            <p class="ml-2">Old Anarkali, Mall Road, Lahore, Pakistan</p>
+          </div>
+        </div>
+
+        <div class="col-sm">
+          <div class="row" style="padding-left: 19%;">
+            <img class="ml-2" src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Facebook_Logo_%282019%29.png/1200px-Facebook_Logo_%282019%29.png" alt="Facebook:" width="25px" height="25px">
+            <p class="ml-2">The Bookev</p>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="row justify-content-center">
+        <p>Copyright © The Soft Crafts 2023. All rights reserved.</p>
+      </div>
+
+    </div>
+
+ </div>
+
+</body>
+</html>

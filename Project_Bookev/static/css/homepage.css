@@ -1,0 +1,211 @@
+ h1,
+ h2,
+ .font-weight-bold {
+    font-weight: 700 !important;
+ }
+
+ h3,
+ h4,
+ .font-weight-semi-bold {
+     font-weight: 600 !important;
+ }
+
+ /* CSS for Navigation Bar */
+
+ .navigationBar{
+            background-color: #3c6255;
+            height: 170px;
+        }
+ .menuOption{
+            font-size: 18px;
+            font-family: VERDANA;
+            color: white;
+            font-weight: bold;
+        }
+        a:hover{
+            color: black;
+            text-decoration: none;
+        }
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #3b3837;
+            min-width: 160px;
+            z-index: 1;
+        }
+        .dropdown-content a {
+            font-size: 15px;
+            font-family: VERDANA;
+            color: white;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+        .dropdown-content a:hover {
+            background-color: #ddd;
+            color:black
+        }
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+
+        /* CSS for Contact Us */
+
+        .contactDiv{
+            background-color: #292927;
+            height: 180px;
+            color: white;
+        }
+
+
+        /* Other CSS */
+
+        .ct-blog .inner {
+            background-color: #3c6255;
+            padding: 10px;
+            cursor: pointer;
+        }
+        .ct-blog .inner:hover {
+            background-color: #61876e;
+        }
+        .ct-blog .fauxcrop {
+            height: 180px;
+            overflow: hidden;
+        }
+        .ct-blog .fauxcrop img {
+            width: 100%;
+        }
+        .ct-blog-content {
+            display: table;
+            padding: 10px 0 10px;
+        }
+        .ct-blog-content .ct-blog-date {
+            border-right: 1px solid #95A5A6;
+            display: table-cell;
+            font-family: "Lato", sans-serif;
+            padding: 0px 18px 0px 15px;
+            text-align: center;
+        }
+        .ct-blog-content .ct-blog-date span {
+            font-size: 16px;
+            color: #eae781;
+            font-weight: 700;
+            display: block;
+            line-height: 1;
+        }
+        .ct-blog-content .ct-blog-date strong {
+            font-size: 25px;
+            color: #eae781;
+        }
+        .ct-blog-content .ct-blog-header {
+            color: #eae781;
+            display: table-cell;
+            font-size: 18px;
+            font-weight: 700;
+            letter-spacing: -0.2px;
+            line-height: 1.5;
+            padding: 0 20px;
+            vertical-align: top;
+        }
+
+
+        #red
+        {
+            background-color: white;
+            height: 330px;
+        }
+        #heading
+        {
+            background-color: #95A5A6;
+            height:330px;
+            cursor: default;
+        }
+
+        #part1
+        {
+            height:330px;
+            background-color: #581845;
+            transition:background-color 0.5s;
+
+
+
+        }
+        #part1:hover
+        {
+            background-color: #350928;
+        }
+        #part2
+        {
+            height:330px;
+            background-color: #900c3f;
+            transition:background-color 0.5s;
+        }
+        #part2:hover
+        {
+            background-color: #72012d;
+        }
+        #part3
+        {
+            height:330px;
+            background-color: #c70039;
+
+        }
+        #part3:hover
+        {
+            background-color: #7a0829;
+            transition:background-color 0.5s;
+        }
+        #part4
+        {
+            height:330px;
+            background-color: #ff5733;
+            transition:background-color 0.5s;
+        }
+        #part4:hover{
+            background-color: #9d2309;
+        }
+        #part5
+        {
+             height:330px;
+             background-color: #ffc300;
+		    transition:background-color 0.5s;
+
+        }
+	    #part5:hover
+        {
+             background-color: #b68e07;
+        }
+        #part6
+        {
+            height:330px;
+            background-color: darkolivegreen;
+            transition:background-color 0.5s;
+        }
+        #part6:hover
+        {
+            background-color: #3b4c1e;
+        }
+
+        #part1:hover,
+        #part2:hover,
+        #part3:hover,
+        #part4:hover,
+        #part5:hover,
+        #part6:hover{
+            cursor: pointer;
+        }
+
+
+        .redirect{
+            text-align: center;
+            color: white;
+            margin-top: 100px;
+        }
+        .redirect:hover{
+            cursor: pointer;
+        }
