@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<script>
+
+function sum(v1,v2){
+	return v1+v2;
+}
+
+function subtract(v1,v2){
+  return v1-v2;
+}
+
+function divide(v1,v2){
+  if (v2 == 0)
+  {
+    return "Math Error!";
+  }
+  else
+  {
+    return v1 / v2;
+  }
+}
+
+function multiply(v1,v2){
+  return v1*v2;
+}
+
+function modulus(v1,v2){
+  return v1 % v2;
+}
+
+function squareRoot(v1){
+  if(v1<0)
+  {
+    return "Math Error!";
+  }
+  return Math.sqrt(v1);
+}
+
+function percentage(v1,v2){
+  return multiply(divide(v1,100),v2);
+}
+
+function factorial(v1)
+{
+  if(v1<0)
+  {
+    return "Math Error!";
+  }
+  else if(v1 <=1)
+  {
+    return 1;
+  }
+  else
+  {
+    return v1 * factorial(v1-1);
+  }
+}
+
+</script>
+
+<style>
+
+.btn-group button {
+  background-color: #B0C4DE;
+  border: 1px solid blue;
+  color: black;
+  padding: 10px 24px;
+  cursor: pointer;
+  float: left;
+}
+
+.btn-group button:not(:last-child) {
+border-right: none;
+}
+
+.btn-group:after {
+  content: "";
+clear: both;
+display: table;
+}
+
+/* Add a background color on hover */
+.btn-group button:hover {
+background-color: #B0E0E6;
+}
+
+</style>
+</head>
+
+<body>
+<h1 style="color:blue">    Scientific Calculator</h1>
+
+
+
+<input style="height:30px; width:40%" type="text" id="field"><br>
+
+
+
+<div class="btn-group">
+  <button style="width:10%" onclick=sumvalues()>+</button>
+  <button style="width:10%" onclick=subvalues()>-</button>
+  <button style="width:10%" onclick=mulvalues()>*</button>
+  <button style="width:10%" onclick=divvalues()>/</button>
+</div>
+
+<div class="btn-group">
+  <button style="width:10%" onclick=modvalues()>mod</button>
+  <button style="width:10%" onclick=percvalues()>percentage</button>
+  <button style="width:10%" onclick=sqrtvalues()>sqrt</button>
+  <button style="width:10%" onclick=facvalues()>factorial</button>
+</div>
+
+<div class="btn-group">
+  <button style="width:10%" onclick=Pi()>pi</button>
+  <button style="width:10%" onclick=log2basee()>log<sub>e</sub>2</button>
+  <button style="width:10%" onclick=log10basee()>log<sub>e</sub>10</button>
+  <button style="width:10%" onclick=logbasee()>log<sub>e</sub>x</button>
+</div>
+
+<div class="btn-group">
+  <button style="width:10%" onclick=logbase2()>log<sub>2</sub>x</button>
+  <button style="width:10%" onclick=logbase10()>log<sub>10</sub>x</button>
+  <button style="width:10%" onclick=power()>y<sup>x</sup></button>
+  <button style="width:10%" onclick=sin()>sin</button>
+</div>
+
+<div class="btn-group">
+  <button style="width:10%" onclick=cos()>cos</button>
+  <button style="width:10%" onclick=tan()>tan</button>
+  <button style="width:10%" onclick=zero()>0</button>
+  <button style="width:10%" onclick=one()>1</button>
+</div>
+
+<div class="btn-group">
+  <button style="width:10%" onclick=two()>2</button>
+  <button style="width:10%" onclick=three()>3</button>
+  <button style="width:10%" onclick=four()>4</button>
+  <button style="width:10%" onclick=five()>5</button>
+</div>
+
+<div class="btn-group">
+  <button style="width:10%" onclick=six()>6</button>
+  <button style="width:10%" onclick=seven()>7</button>
+  <button style="width:10%" onclick=eight()>8</button>
+  <button style="width:10%" onclick=nine()>9</button>
+</div>
+
+<div class="btn-group">
+  <button style="width:10%" onclick=decimal()>.</button>
+  <button style="width:20%" onclick=doEvaluation()>Evaluate</button>
+  <button style="width:10%" onclick=erase()>Clear</button>
+</div>
+
+<script>
+
+function sumvalues(){
+  res = document.getElementById("field").value
+  document.getElementById("field").value = res + "+"
+}
+
+function subvalues(){
+  res = document.getElementById("field").value
+  document.getElementById("field").value = res + "-"
+}
+
+function mulvalues(){
+  res = document.getElementById("field").value
+  document.getElementById("field").value = res + "*"
+}
+
+function divvalues(){
+  res = document.getElementById("field").value
+  document.getElementById("field").value = res + "/"
+}
+
+function modvalues(){
+  res = document.getElementById("field").value
+  document.getElementById("field").value = res + "%"
+}
+
+function percvalues(){
+  res = document.getElementById("field").value
+  document.getElementById("field").value = res + " percent of "
+}
+
+function sqrtvalues(){
+  res = document.getElementById("field").value
+  document.getElementById("field").value = res + "√"
+}
+
+function facvalues(){
+  res = document.getElementById("field").value
+  document.getElementById("field").value = res + "!"
+}
+
+function decimal()
+{
+res = document.getElementById("field").value
+  document.getElementById("field").value = res + "."
+}
+
+function Pi(){
+  res = document.getElementById("field").value
+  document.getElementById("field").value = res + "3.14159"
+}
+
+function log2basee(){
+  res = document.getElementById("field").value
+  document.getElementById("field").value = res + Math.log(2);
+}
+
+function log10basee(){
+  res = document.getElementById("field").value
+  document.getElementById("field").value = res + Math.log(10)
+}
+
+function logbasee(){
+  res = document.getElementById("field").value
+  document.getElementById("field").value = res + "ln"
+}
+
+function logbase2(){
+  res = document.getElementById("field").value
+  document.getElementById("field").value = res + "logbTwo";
+}
+
+function logbase10(){
+  res = document.getElementById("field").value
+  document.getElementById("field").value = res + "logbTen";
+}
+
+function power(){
+  res = document.getElementById("field").value
+  document.getElementById("field").value = res + "^"
+}
+
+function sin(){
+  res = document.getElementById("field").value
+  document.getElementById("field").value = res + "sin"
+}
+
+function cos(){
+  res = document.getElementById("field").value
+  document.getElementById("field").value = res + "cos"
+}
+
+function tan(){
+  res = document.getElementById("field").value
+  document.getElementById("field").value = res + "tan"
+}
+
+function one()
+{
+  res = document.getElementById("field").value
+  document.getElementById("field").value = res + "1"
+}
+
+function two()
+{
+  res = document.getElementById("field").value
+  document.getElementById("field").value = res + "2"
+}
+
+function three()
+{
+  res = document.getElementById("field").value
+  document.getElementById("field").value = res + "3"
+}
+
+function four()
+{
+  res = document.getElementById("field").value
+  document.getElementById("field").value = res + "4"
+}
+
+function five()
+{
+  res = document.getElementById("field").value
+  document.getElementById("field").value = res + "5"
+}
+
+function six()
+{
+  res = document.getElementById("field").value
+  document.getElementById("field").value = res + "6"
+}
+
+function seven()
+{
+  res = document.getElementById("field").value
+  document.getElementById("field").value = res + "7"
+}
+
+function eight()
+{
+  res = document.getElementById("field").value
+  document.getElementById("field").value = res + "8"
+}
+
+function nine()
+{
+  res = document.getElementById("field").value
+  document.getElementById("field").value = res + "9"
+}
+
+function zero()
+{
+  res = document.getElementById("field").value
+  document.getElementById("field").value = res + "0"
+}
+
+function doEvaluation()
+{
+  expression = document.getElementById("field").value;
+  var len = expression.length;
+  var arg1=""
+  let i = 0;
+  while (i < len && (expression[i] >= '0' && expression[i] <= '9') || expression[i] == '.'){
+    arg1 += expression[i];
+    i+=1;
+  }
+  var operator = "";
+  while(i < len && (expression[i] < '0' || expression[i] > '9')){
+    operator +=expression[i];
+    i+=1;
+  }
+  var arg2 = ""
+  while (i < len && (expression[i] >= '0' && expression[i] <= '9') || expression[i] == '.'){
+    arg2 += expression[i];
+    i+=1;
+  }
+
+  var remaining=""
+  while (i< len){
+    remaining += expression[i];
+    i+=1;
+  }
+
+  if(operator == "+"){
+    document.getElementById("field").value = sum(parseFloat(arg1),parseFloat(arg2)) + remaining;
+  }
+  else if(operator == "-"){
+    document.getElementById("field").value = subtract(parseFloat(arg1),parseFloat(arg2))  + remaining;
+  }
+  else if(operator == "*"){
+    document.getElementById("field").value = multiply(parseFloat(arg1),parseFloat(arg2))  + remaining;
+  }
+  else if(operator == "/"){
+    document.getElementById("field").value = divide(parseFloat(arg1),parseFloat(arg2))  + remaining;
+  }
+  else if(operator == "%"){
+    document.getElementById("field").value = modulus(parseFloat(arg1),parseFloat(arg2))  + remaining;
+  }
+  else if(operator == " percent of "){
+    document.getElementById("field").value = percentage(parseFloat(arg1),parseFloat(arg2))  + remaining;
+  }
+  else if(operator == "√")
+  {
+    document.getElementById("field").value = squareRoot(parseFloat(arg2))  + remaining;
+  }
+  else if(operator == "!")
+  {
+    document.getElementById("field").value = factorial(parseFloat(arg1))  + remaining;
+  }
+  else if(operator == "ln")
+  {
+    document.getElementById("field").value = Math.log(parseFloat(arg2))  + remaining;
+  }
+  else if(operator == "logbTwo")
+  {
+    document.getElementById("field").value = Math.log2(parseFloat(arg2))  + remaining;
+  }
+  else if(operator == "logbTen")
+  {
+    document.getElementById("field").value = Math.log10(parseFloat(arg2))  + remaining;
+  }
+  else if(operator == "^"){
+    document.getElementById("field").value = Math.pow(parseFloat(arg1),parseFloat(arg2))  + remaining;
+  }
+  else if(operator == "sin"){
+    document.getElementById("field").value = Math.sin(parseFloat(arg2))  + remaining;
+  }
+  else if(operator == "cos"){
+    document.getElementById("field").value = Math.cos(parseFloat(arg2))  + remaining;
+  }
+  else if(operator == "tan"){
+    document.getElementById("field").value = Math.tan(parseFloat(arg2))  + remaining;
+  }
+  else if(operator == "")
+  {
+
+  }
+  else
+  {
+    document.getElementById("field").value = "Invalid Expression!"
+  }
+}
+
+function erase()
+{
+  document.getElementById("field").value = ""
+}
+
+</script>
+
+</body>
+
+</html>
